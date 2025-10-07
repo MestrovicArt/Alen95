@@ -1,164 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MestrovicArt | Umjetnički radovi na prodaju</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #111;
-      color: #eee;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(135deg, #1a1a1a, #333);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-      color: #f5f5f5;
-    }
-    header p {
-      color: #aaa;
-      font-size: 1rem;
-    }
-    section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #444;
-      padding-bottom: 0.5rem;
-      color: #f2c94c;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .art-item {
-      background-color: #1b1b1b;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      transition: transform 0.2s ease-in-out;
-    }
-    .art-item:hover {
-      transform: scale(1.02);
-    }
-    .art-item img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-    .art-info {
-      padding: 1rem;
-    }
-    .art-info h3 {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #f2f2f2;
-    }
-    .art-info p {
-      margin: 0.3rem 0;
-      color: #bbb;
-      font-size: 0.9rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      border-top: 1px solid #333;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    footer a {
-      color: #f2c94c;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MestrovicArt — Portreti i radovi na prodaju</title>
+<meta name="description" content="MestrovicArt — naruči portret; pregledaj i kupi ulja na platnu, pejzaže, mrtvu prirodu i crtane radove."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #071017; color: #e7f0f6; margin: 0; padding: 0; }
+header { text-align: center; padding: 40px 20px; background: linear-gradient(180deg, #0f1a25, #071017); }
+h1 { color: #f2c94c; margin-bottom: 10px; }
+section { max-width: 1000px; margin: 0 auto; padding: 20px; }
+footer { text-align: center; padding: 20px; font-size: 14px; color: #9fb0bf; }
+a { color: #f2c94c; text-decoration: none; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.gallery img { width: 100%; border-radius: 10px; transition: transform .3s; }
+.gallery img:hover { transform: scale(1.05); }
+</style>
 </head>
 <body>
-
-  <header>
-    <h1>MestrovicArt</h1>
-    <p>Umjetnički radovi na prodaju – ulja na platnu, pejzaži, apstraktno-realni i crtani radovi</p>
-  </header>
-
+<header>
+  <h1>MestrovicArt</h1>
+  <p>Portreti i umjetnički radovi na prodaju</p>
+</header>
+<main>
   <section>
-    <h2>Ulja na platnu (moderni apstraktno-realistički)</h2>
-    <div class="gallery">
-      <div class="art-item">
-        <img src="images/ulje1.jpg" alt="Apstraktni pejzaž">
-        <div class="art-info">
-          <h3>Apstraktni pejzaž</h3>
-          <p>Dimenzije: 100x70 cm</p>
-          <p>Cijena: Po dogovoru</p>
-        </div>
-      </div>
-
-      <div class="art-item">
-        <img src="images/ulje2.jpg" alt="Emocionalna apstrakcija">
-        <div class="art-info">
-          <h3>Emocionalna apstrakcija</h3>
-          <p>Dimenzije: 80x60 cm</p>
-          <p>Cijena: Po dogovoru</p>
-        </div>
-      </div>
-    </div>
+    <h2>Dobrodošli!</h2>
+    <p>Ovdje možete naručiti portret ili pregledati gotove umjetničke radove koji su dostupni za prodaju. Specijalnost su ulja na platnu u modernom apstraktno-realnom stilu, pejzaži, mrtva priroda i crtani radovi.</p>
   </section>
 
   <section>
-    <h2>Pejzaži</h2>
+    <h2>Galerija radova</h2>
     <div class="gallery">
-      <div class="art-item">
-        <img src="images/pejzaz1.jpg" alt="Zalazak sunca">
-        <div class="art-info">
-          <h3>Zalazak sunca</h3>
-          <p>Dimenzije: 50x70 cm</p>
-          <p>Cijena: Po dogovoru</p>
-        </div>
-      </div>
+      <img src="images/ulje1.jpg" alt="Ulje na platnu — Apstraktni pejzaž">
+      <img src="images/ulje2.jpg" alt="Ulje na platnu — Mrtva priroda">
+      <img src="images/pejzaz1.jpg" alt="Pejzaž">
+      <img src="images/crtez1.jpg" alt="Crtani portret">
     </div>
   </section>
-
-  <section>
-    <h2>Mrtva priroda</h2>
-    <div class="gallery">
-      <div class="art-item">
-        <img src="images/mrtva1.jpg" alt="Voće i svjetlo">
-        <div class="art-info">
-          <h3>Voće i svjetlo</h3>
-          <p>Dimenzije: 80x60 cm</p>
-          <p>Cijena: Po dogovoru</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Crtani radovi</h2>
-    <div class="gallery">
-      <div class="art-item">
-        <img src="images/crtez1.jpg" alt="Portret u olovci">
-        <div class="art-info">
-          <h3>Portret u olovci</h3>
-          <p>Dimenzije: 50x70 cm</p>
-          <p>Cijena: Po dogovoru</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Kontakt: <a href="mailto:mestrovicart@gmail.com">mestrovicart@gmail.com</a></p>
-    <p>&copy; 2025 MestrovicArt | Sva prava pridržana</p>
-  </footer>
-
+</main>
+<footer>
+  © 2025 MestrovicArt — <a href="mailto:mestrovicart@gmail.com">mestrovicart@gmail.com</a>
+</footer>
 </body>
 </html>
