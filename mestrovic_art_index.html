@@ -1,0 +1,220 @@
+<!--
+  FILE: index.html
+  PROJECT: MestrovicArt (Portfolio)
+  AUTHOR: Generated for user "MestrovicArt"
+  NOTES:
+    - Replace the placeholder images in /images/ with your real image files from your library.
+    - Example filenames used below: images/portret1.jpg ... images/portret6.jpg
+    - If your files have different names, either rename them before upload or update the <img src="..."> paths.
+    - A short README (ready-to-copy) is included near the bottom of this file (inside an HTML comment) for use on GitHub.
+
+  How to use:
+    1) Save this file as index.html
+    2) Create a folder named "images" and upload your portrait files there (portret1.jpg, portret2.jpg, ...), or edit paths.
+    3) Upload index.html and the images folder to a GitHub repository (see steps in the GitHub instructions in the canvas/chat).
+    4) Site will be live via GitHub Pages or you can drag-and-drop to Netlify.
+-->
+
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MestrovicArt — Grafitni i pastelni portreti. Ručno rađeni portreti po narudžbi. Kontakt: mestrovicart@gmail.com" />
+  <title>MestrovicArt — Portfelj</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#f1c40f;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#0b1020 0%, #08101a 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+    header{padding:36px 20px;text-align:center;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-bottom:1px solid rgba(255,255,255,0.03)}
+    .brand{font-weight:700; font-size:28px; letter-spacing:0.6px}
+    .tag{margin-top:6px;color:var(--muted); font-size:14px}
+
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+    @media(min-width:860px){ .hero{grid-template-columns: 1fr 420px} }
+
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:22px;border-radius:14px; box-shadow:0 10px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03)}
+    h1{margin:0;font-size:30px}
+    p.lead{color:var(--muted); margin:12px 0 0; line-height:1.5}
+
+    .about{margin-top:14px; padding:12px 14px; border-radius:10px; background:var(--glass); color:#d8e6f2}
+
+    .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.008)); border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.03); cursor:pointer; transition:transform .22s ease, box-shadow .22s ease}
+    .card:hover{transform:translateY(-6px); box-shadow:0 16px 40px rgba(2,6,23,0.6)}
+    .thumb{width:100%;height:220px;object-fit:cover;display:block;background:#222}
+    .meta{padding:12px}
+    .meta strong{display:block}
+    .meta small{color:var(--muted)}
+
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,#111827,#0b1220);color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.04)}
+
+    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* Modal */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.7);z-index:60}
+    .modal.open{display:flex}
+    .modal-content{max-width:920px;width:92%;background:transparent;border-radius:10px;}
+    .modal-img{max-height:80vh;width:100%;object-fit:contain;border-radius:8px}
+    .modal-caption{color:#d0d8e6;margin-top:8px;text-align:center}
+
+    /* small helper */
+    .note{color:var(--muted); font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">MestrovicArt</div>
+    <div class="tag">Grafitni i pastelni portreti — Ručno, emotivno, po narudžbi</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>MestrovicArt — Portfelj</h1>
+        <p class="lead">Dobrodošao. Ovdje vidiš izbor radova nastalih kombinacijom grafita i pastela. Svaki portret nastaje kroz pažljivo promatranje i pokušaj da se uhvati istinski osjećaj trenutka — toplina, sjena, tišina.</p>
+
+        <div class="about">
+          <!-- Kratka, moćna priča (kopiraj i iskoristi i za GitHub README): -->
+          <strong>O meni</strong>
+          <p style="margin:8px 0 0;">MestrovicArt stvara portrete koji govore jezicima tišine i emocije. Spojem preciznost grafita i mekše nijanse pastela kako bih uhvatio trenutke — momenat koji promatrač osjeti, a riječ ne može opisati. Svaki rad je intimna priča; radim po narudžbi i posvećujem se detalju koji čini razliku.</p>
+          <p style="margin:8px 0 0;" class="note"><strong>Kontakt:</strong> <a href="mailto:mestrovicart@gmail.com" style="color:var(--accent);text-decoration:none">mestrovicart@gmail.com</a></p>
+        </div>
+
+        <p style="margin-top:12px" class="note">Savjet: zamijeni placeholdere u galeriji svojim slikama iz biblioteke. Korak-po-korak vodič za objavu nalazi se ispod.</p>
+      </div>
+
+      <aside class="hero-card" style="height:100%">
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;height:100%">
+          <img src="images/portret1.jpg" alt="Istaknuti portret" style="width:100%;height:260px;object-fit:cover;border-radius:8px;display:block;margin-bottom:8px">
+          <div style="text-align:center">
+            <a class="cta" href="mailto:mestrovicart@gmail.com">Pošalji upit / narudžbu</a>
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">Besplatna objava: GitHub Pages / Netlify</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <h2 style="margin-top:26px">Galerija</h2>
+      <div class="gallery" id="gallery">
+        <!-- ZAMIJENI OVE SRC S PUTANJAMA DO SLIKA KOJE IMAŠ U SVOJOJ BIBLIOTECI -->
+        <figure class="card" data-title="Portret 1 — Grafit & Pastel" tabindex="0">
+          <img class="thumb" src="images/portret1.jpg" alt="Portret 1">
+          <figcaption class="meta"><strong>Portret 1</strong><small>Grafit & pastel — 30x40 cm</small></figcaption>
+        </figure>
+
+        <figure class="card" data-title="Portret 2 — Pastel" tabindex="0">
+          <img class="thumb" src="images/portret2.jpg" alt="Portret 2">
+          <figcaption class="meta"><strong>Portret 2</strong><small>Pastel — 24x30 cm</small></figcaption>
+        </figure>
+
+        <figure class="card" data-title="Portret 3 — Uljane boje" tabindex="0">
+          <img class="thumb" src="images/portret3.jpg" alt="Portret 3">
+          <figcaption class="meta"><strong>Portret 3</strong><small>Uljane boje — 40x50 cm</small></figcaption>
+        </figure>
+
+        <figure class="card" data-title="Portret 4" tabindex="0">
+          <img class="thumb" src="images/portret4.jpg" alt="Portret 4">
+          <figcaption class="meta"><strong>Portret 4</strong><small>Grafit — 30x40 cm</small></figcaption>
+        </figure>
+
+        <figure class="card" data-title="Portret 5" tabindex="0">
+          <img class="thumb" src="images/portret5.jpg" alt="Portret 5">
+          <figcaption class="meta"><strong>Portret 5</strong><small>Pastel — 30x40 cm</small></figcaption>
+        </figure>
+
+        <figure class="card" data-title="Portret 6" tabindex="0">
+          <img class="thumb" src="images/portret6.jpg" alt="Portret 6">
+          <figcaption class="meta"><strong>Portret 6</strong><small>Eksperimentalno — mješoviti medij</small></figcaption>
+        </figure>
+      </div>
+
+      <p class="note" style="margin-top:10px">Napomena: ako nemaš 6 slika, obriši višak <code>&lt;figure&gt;</code> elemenata ili zamijeni njihova <code>src</code> polja odgovarajućim imenima datoteka.</p>
+    </section>
+
+    <section style="margin-top:26px">
+      <h2>Kontakt</h2>
+      <p class="note">Za upite i narudžbe: <a href="mailto:mestrovicart@gmail.com" style="color:var(--accent);text-decoration:none">mestrovicart@gmail.com</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> MestrovicArt — Portreti. Sva prava pridržana.
+    </footer>
+  </main>
+
+  <!-- Modal lightbox -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <img id="modalImg" class="modal-img" src="" alt="">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lightbox behaviour
+    const gallery = document.getElementById('gallery');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    const modalCaption = document.getElementById('modalCaption');
+
+    gallery.addEventListener('click', e=>{
+      const fig = e.target.closest('figure');
+      if(!fig) return;
+      const img = fig.querySelector('img');
+      openModal(img.src, fig.dataset.title || img.alt || 'Portret');
+    });
+
+    gallery.addEventListener('keydown', e=>{
+      if(e.key === 'Enter'){
+        const fig = e.target.closest('figure');
+        if(!fig) return;
+        const img = fig.querySelector('img');
+        openModal(img.src, fig.dataset.title || img.alt || 'Portret');
+      }
+    });
+
+    function openModal(src, caption){
+      modalImg.src = src;
+      modalImg.alt = caption;
+      modalCaption.textContent = caption;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    }
+    modal.addEventListener('click', ()=> closeModal());
+    window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+    function closeModal(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; }
+  </script>
+
+  <!--
+    README.md (KOPIRAJ OVDJE ILI U README.md NA GITHUB-U)
+
+    # MestrovicArt
+
+    MestrovicArt stvara portrete koji govore jezicima tišine i emocije. Spoj preciznosti grafita i mekane palete pastela koristi se za hvatanje trenutaka koji ostaju u sjećanju.
+
+    **Kontakt:** mestrovicart@gmail.com
+
+    _Radim po narudžbi. Pošaljite detalje i fotografiju za procjenu cijene i vremena izrade._
+
+    ---
+
+    KRAJ README-a
+
+    Kratke upute (sažeto):
+    - Spremi ovaj fajl kao `index.html`.
+    - Napravi folder `images/` i ubaci svoje slike (npr. portret1.jpg, portret2.jpg...).
+    - Na GitHubu stvori repozitorij i uploadaj `index.html` i folder `images`.
+    - Ako koristiš "User site" (reponame: <your-username>.github.io), stranica će biti dostupna na https://<your-username>.github.io
+    - Alternativa: Netlify drag-and-drop (uploadaš folder i dobiješ *.netlify.app adresu)
+
+  -->
+</body>
+</html>
